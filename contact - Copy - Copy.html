@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       const span = document.querySelector("span");
+
+span.onclick = function() {
+  document.execCommand("copy");
+}
+
+span.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", span.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
+    </script>
+    <style>
+        
+       body{
+        background-color: black;
+    
+       }
+       .container {
+        max-width:1000px;
+        margin: auto;
+        background-color: black;
+        justify-content: center;
+       }
+      .container h1{
+        color: white;
+        text-align: center;
+        font-size: 65px;
+        }
+        .container img {
+            border-radius: 50%;
+            width: 40%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container2:hover,.container3:hover,.container4:hover,.container5:hover,.container6:hover,.container7:hover,.container8:hover{
+            background-color: rgb(35, 34, 34);
+        }
+        .container2,.container3,.container4,.container5,.container6,.container7,.container8{
+            display: flex;
+            border: 2px solid orangered;
+            border-radius: 10px;
+            height: 90px;
+        }
+        .container2 img,.container3 img,.container4 img,.container5 img,.container6 img,.container7 img,.container8 img{
+            height: auto;
+            width: auto;
+            margin-left: 10px;
+            
+        }
+       
+        h2 {
+            color: orangered;
+            margin-right: 10px;
+        }
+        
+        footer {
+            background-color:rgb(48, 47, 47);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: orangered;
+            font-weight: bold;
+        }
+
+        .footer2 {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lets Catch Up</h1>
+        <img src="k-s3-toon-7495-olj1102-2-letscatchup.jpg" alt=""><br><br><br>
+        <div class="details">
+        <a href="https://instagram.com/kalyan_kumar_balineni?igshid=ZDc4ODBmNjlmNQ==">
+        <div class="container2">
+           <img src="instagram-removebg-preview.png" alt="Instagram logo">
+           <h2>@kalyan_kumar_balineni</h2>
+        </div><br><br><br>
+        </a>
+        <a href="https://www.linkedin.com/in/balineni-kalyan-kumar-0749a825b">
+            <div class="container3">
+               <img src="linkdin-removebg-preview.png" alt="Linkedin logo">
+               <h2>@balineni-kalyan-kumar</h2>
+            </div><br><br><br>
+        </a>
+        <a href="https://twitter.com/KalyanK13395929?t=2urgDy5I8sSbQdnfrw1BbQ&s=08">
+            <div class="container4">
+               <img src="twitter-removebg-preview.png" alt="Twitter logo">
+               <h2>@KalyanK13395929</h2>
+            </div><br><br><br>
+        </a>
+        <a href="#">
+            <div class="container5">
+               <img src="gmail logo.png" alt=" Gmail logo">
+               
+               <h2>@balinenikalyankumar3333@gmail.com</h2>
+            </div><br><br><br>
+        </a>
+        <a href="#">
+            <div class="container6">
+               <img src="discord-removebg-preview.png" alt="Discord logo">
+               <h2>@Kalyan Kumar#0066</h2>
+            </div><br><br><br>
+        </a>
+        <a href="https://github.com/BalineniKalyan">
+            <div class="container7">
+               <img src="github_logo.png" alt=" Github logo">
+               <h2>@BalineniKalyan</h2>
+            </div><br><br><br>
+        </a>
+        <a href="https://www.threads.net/@kalyan_kumar_balineni">
+            <div class="container8">
+               <img src="threads_logo.png" alt="Threads logo">
+               <h2>@kalyan_kumar_balineni</h2>
+            </div><br><br><br>
+        </a>
+       
+        
+            
+        
+        </div>
+    </div>
+    <footer>
+        <div class="footer2">
+          <p>&copy; 2023 Your Website. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
